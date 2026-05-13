@@ -14,8 +14,8 @@ const inter = Inter({
 })
 
 export const metadata = {
-  title: "W54 // Night City DataNet Archive",
-  description: "Acesso Público Da Net - Arquivo de dados de Night City 2045",
+  title: "W54 — Enciclopédia da Família Nikolic",
+  description: "A enciclopédia livre e colaborativa sobre a família Nikolic em Night City. Informações sobre Chidi Nikolic, Eleanor Moreau e seus familiares.",
   generator: 'v0.app'
 }
 

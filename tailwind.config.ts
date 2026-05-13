@@ -1,7 +1,5 @@
 import type { Config } from 'tailwindcss'
 
-// all in fixtures is set to tailwind v3 as interims solutions
-
 const config: Config = {
   darkMode: ['class'],
   content: [
@@ -12,6 +10,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['var(--font-orbitron)', 'system-ui', 'sans-serif'],
+        mono: ['var(--font-share-tech)', 'monospace'],
+      },
       colors: {
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
@@ -46,6 +48,23 @@ const config: Config = {
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
         ring: 'hsl(var(--ring))',
+        // Cyberpunk Neon Colors
+        neon: {
+          cyan: '#00ffff',
+          magenta: '#ff00ff',
+          yellow: '#ffff00',
+          red: '#ff0040',
+          purple: '#bf00ff',
+          green: '#00ff41',
+          orange: '#ff6600',
+          pink: '#ff0080',
+        },
+        cyber: {
+          dark: '#0a0a0f',
+          darker: '#050508',
+          gray: '#1a1a2e',
+          light: '#16213e',
+        },
         chart: {
           '1': 'hsl(var(--chart-1))',
           '2': 'hsl(var(--chart-2))',
@@ -71,25 +90,48 @@ const config: Config = {
       },
       keyframes: {
         'accordion-down': {
-          from: {
-            height: '0',
-          },
-          to: {
-            height: 'var(--radix-accordion-content-height)',
-          },
+          from: { height: '0' },
+          to: { height: 'var(--radix-accordion-content-height)' },
         },
         'accordion-up': {
-          from: {
-            height: 'var(--radix-accordion-content-height)',
+          from: { height: 'var(--radix-accordion-content-height)' },
+          to: { height: '0' },
+        },
+        'pulse-neon': {
+          '0%, 100%': { 
+            boxShadow: '0 0 5px currentColor, 0 0 10px currentColor',
+            opacity: '1'
           },
-          to: {
-            height: '0',
+          '50%': { 
+            boxShadow: '0 0 20px currentColor, 0 0 40px currentColor',
+            opacity: '0.8'
           },
+        },
+        'glitch': {
+          '0%': { transform: 'translate(0)' },
+          '20%': { transform: 'translate(-2px, 2px)' },
+          '40%': { transform: 'translate(-2px, -2px)' },
+          '60%': { transform: 'translate(2px, 2px)' },
+          '80%': { transform: 'translate(2px, -2px)' },
+          '100%': { transform: 'translate(0)' },
+        },
+        'flicker': {
+          '0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100%': { opacity: '1' },
+          '20%, 21.999%, 63%, 63.999%, 65%, 69.999%': { opacity: '0.4' },
         },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
+        'pulse-neon': 'pulse-neon 2s ease-in-out infinite',
+        'glitch': 'glitch 0.3s ease-in-out infinite',
+        'flicker': 'flicker 0.15s infinite',
+      },
+      boxShadow: {
+        'neon-cyan': '0 0 5px #00ffff, 0 0 10px #00ffff, 0 0 20px #00ffff',
+        'neon-magenta': '0 0 5px #ff00ff, 0 0 10px #ff00ff, 0 0 20px #ff00ff',
+        'neon-yellow': '0 0 5px #ffff00, 0 0 10px #ffff00, 0 0 20px #ffff00',
+        'neon-red': '0 0 5px #ff0040, 0 0 10px #ff0040, 0 0 20px #ff0040',
       },
     },
   },

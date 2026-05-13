@@ -1,6 +1,6 @@
 import type React from "react"
 import "@/app/globals.css"
-import { Orbitron, Share_Tech_Mono } from "next/font/google"
+import { Orbitron, Inter } from "next/font/google"
 import { ThemeProvider } from "@/components/theme-provider"
 
 const orbitron = Orbitron({ 
@@ -8,10 +8,9 @@ const orbitron = Orbitron({
   variable: "--font-orbitron"
 })
 
-const shareTechMono = Share_Tech_Mono({ 
-  weight: "400",
+const inter = Inter({ 
   subsets: ["latin"],
-  variable: "--font-share-tech"
+  variable: "--font-inter"
 })
 
 export const metadata = {
@@ -27,7 +26,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR" className="dark">
-      <body className={`${orbitron.variable} ${shareTechMono.variable} font-sans bg-[#0a0a0f] scanline`}>
+      <body className={`${orbitron.variable} ${inter.variable} font-sans bg-[#0a0a0f] scanline`}>
         <ThemeProvider attribute="class" defaultTheme="dark" forcedTheme="dark">
           {children}
         </ThemeProvider>

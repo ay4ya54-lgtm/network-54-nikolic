@@ -240,6 +240,10 @@ export default function SophiaPage() {
                       <Link href="/wiki/daniela-nikolic" className="text-red-500 hover:underline block">Daniela Nikolic</Link>
                     </div>
                     <div className="px-3 py-2">
+                      <span className="text-gray-500">Filha</span>
+                      <p className="text-gray-300">Penelope Nikolic</p>
+                    </div>
+                    <div className="px-3 py-2">
                       <span className="text-gray-500">Conhecido por</span>
                       <p className="text-gray-300">Produção de jazz analógico</p>
                       <p className="text-gray-300">Preservação de áudio vintage</p>
@@ -288,7 +292,7 @@ export default function SophiaPage() {
                 <h2 className="text-xl font-serif font-semibold text-red-600 mt-6 mb-3 border-b border-gray-700 pb-2">Vida pessoal e isolamento digital</h2>
                 
                 <p className="text-gray-300 leading-relaxed mb-4">
-                  Sophia é notoriamente reclusa, preferindo comunicação presencial e recusando-se deliberadamente a participar de redes sociais digitais, plataformas de streaming ou qualquer forma de presença online corporativa. Sua presença digital é praticamente inexistente, com informações públicas limitadas a menções ocasionais em arquivos culturais independentes.
+                  Sophia é notoriamente reclusa, preferindo comunicação presencial e recusando-se deliberadamente a participar de redes sociais digitais, plataformas de streaming ou qualquer forma de presença online corporativa. Sua presença digital é praticamente inexistente, com informações públicas limitadas a menções ocasionais em arquivos culturais independentes. Mãe de <strong className="text-white">Penelope Nikolic</strong>, atualmente estudante universitária que reside com ela em Westbrook.
                 </p>
 
                 <p className="text-gray-300 leading-relaxed mb-4">

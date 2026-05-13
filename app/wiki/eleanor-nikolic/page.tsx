@@ -230,7 +230,7 @@ export default function EleanorNikolicPage() {
                     </div>
                     <div className="px-3 py-2">
                       <span className="text-gray-500">Anos de atividade</span>
-                      <p className="text-gray-300">1993 — 2007</p>
+                      <p className="text-gray-300">1993 — 2009</p>
                     </div>
                     <div className="px-3 py-2">
                       <span className="text-gray-500">Estado civil</span>

@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Search } from "lucide-react"
 
-export default function EleanorNikolicPage() {
+export default function SophiaPage() {
   const [searchQuery, setSearchQuery] = useState("")
   const [activeTab, setActiveTab] = useState<"artigo" | "discussao">("artigo")
 
@@ -49,7 +49,7 @@ export default function EleanorNikolicPage() {
           <div className="flex items-center justify-center gap-4 text-center">
             <span className="text-yellow-500 text-xs font-bold uppercase tracking-wider">Anúncio</span>
             <p className="text-gray-300 text-sm">
-              Aprenda programação do zero ao avançado - <span className="text-red-500 font-semibold">CursoTech Pro</span> - 70% de desconto hoje!
+              Serviço de inteligência de dados corporativos - <span className="text-red-500 font-semibold">CorpStats AI</span> - Análise em tempo real!
             </p>
             <Button size="sm" className="bg-yellow-600 hover:bg-yellow-700 text-black text-xs">
               Saiba Mais
@@ -128,7 +128,7 @@ export default function EleanorNikolicPage() {
                   ID: <span className="text-gray-300 font-mono">NW-744-2045</span>
                 </p>
                 <p className="text-xs text-gray-500">
-                  Nível de risco: <span className="text-green-500 font-semibold">Baixo</span>
+                  Nível de risco: <span className="text-yellow-500 font-semibold">Médio</span>
                 </p>
                 <div className="pt-3 border-t border-gray-800 text-center">
                   <span className="text-xl font-bold tracking-widest text-yellow-500">NETWATCH</span>
@@ -141,7 +141,7 @@ export default function EleanorNikolicPage() {
 
         {/* Main Content */}
         <div className="flex-1 py-6 px-6">
-          <h1 className="text-4xl font-serif font-medium mb-2 text-red-600">Eleanor Vivienne Moreau Nikolic</h1>
+          <h1 className="text-4xl font-serif font-medium mb-2 text-red-600">Sophia Nikolic</h1>
           <p className="text-sm text-gray-500 mb-4">Origem: Wikipédia, a enciclopédia livre.</p>
           
           {/* Wikipedia Tabs */}
@@ -178,45 +178,39 @@ export default function EleanorNikolicPage() {
                 <div className="bg-gray-900 border border-gray-700 rounded">
                   {/* Header */}
                   <div className="bg-red-900/50 px-3 py-2 border-b border-gray-700 text-center">
-                    <span className="text-lg font-serif font-semibold text-red-500">ELEANOR NIKOLIC</span>
+                    <span className="text-lg font-serif font-semibold text-red-500">SOPHIA NIKOLIC</span>
                   </div>
                   
                   {/* Image */}
                   <div className="p-3 border-b border-gray-700">
                     <Image
-                      src="/images/eleanor-nikolic.png"
-                      alt="Eleanor Vivienne Moreau Nikolic"
+                      src="/images/sophia-nikolic.png"
+                      alt="Sophia Nikolic"
                       width={280}
                       height={320}
                       className="w-full h-auto rounded object-cover"
                     />
-                    <p className="text-xs text-gray-500 text-center mt-2">Eleanor Moreau, circa 2005</p>
+                    <p className="text-xs text-gray-500 text-center mt-2">Sophia Nikolic, 2044</p>
                   </div>
                   
                   {/* Info Table */}
                   <div className="divide-y divide-gray-800 text-sm">
                     <div className="px-3 py-2">
                       <span className="text-gray-500">Nome completo</span>
-                      <p className="text-gray-300">Eleanor Vivienne Moreau Nikolic</p>
-                    </div>
-                    <div className="px-3 py-2">
-                      <span className="text-gray-500">Nome de nascimento</span>
-                      <p className="text-gray-300">Eleanor Vivienne Moreau</p>
+                      <p className="text-gray-300">Sophia Eleanor Nikolic</p>
                     </div>
                     <div className="px-3 py-2">
                       <span className="text-gray-500">Nascimento</span>
-                      <p className="text-gray-300">12 de setembro de 1972</p>
-                      <p className="text-gray-400 text-xs">Marseille, França</p>
+                      <p className="text-gray-300">22 de março de 2008</p>
+                      <p className="text-gray-400 text-xs">Westbrook, Night City</p>
                     </div>
                     <div className="px-3 py-2">
-                      <span className="text-gray-500">Falecimento</span>
-                      <p className="text-gray-300">17 de novembro de 2009</p>
-                      <p className="text-gray-400 text-xs">Night City</p>
-                      <p className="text-gray-400 text-xs">(37 anos)</p>
+                      <span className="text-gray-500">Idade em 2045</span>
+                      <p className="text-gray-300">37 anos</p>
                     </div>
                     <div className="px-3 py-2">
                       <span className="text-gray-500">Nacionalidade</span>
-                      <p className="text-gray-300">Franco-americana</p>
+                      <p className="text-gray-300">Norte-americana</p>
                     </div>
                     <div className="px-3 py-2">
                       <span className="text-gray-500">Residência</span>
@@ -224,56 +218,44 @@ export default function EleanorNikolicPage() {
                     </div>
                     <div className="px-3 py-2">
                       <span className="text-gray-500">Profissão</span>
-                      <p className="text-gray-300">Artista plástica</p>
-                      <p className="text-gray-300">Pianista</p>
-                      <p className="text-gray-300">Curadora cultural</p>
-                    </div>
-                    <div className="px-3 py-2">
-                      <span className="text-gray-500">Anos de atividade</span>
-                      <p className="text-gray-300">1993 — 2007</p>
-                    </div>
-                    <div className="px-3 py-2">
-                      <span className="text-gray-500">Estado civil</span>
-                      <p className="text-gray-300">Casada</p>
-                    </div>
-                    <div className="px-3 py-2">
-                      <span className="text-gray-500">Cônjuge</span>
-                      <Link href="/" className="text-red-500 hover:underline block">Chidi Aleksandar Nikolic</Link>
-                    </div>
-                    <div className="px-3 py-2">
-                      <span className="text-gray-500">Filhos</span>
-                      <Link href="#" className="text-red-500 hover:underline block">Daniela Nikolic</Link>
-                      <Link href="#" className="text-red-500 hover:underline block">Sophia Nikolic</Link>
-                    </div>
-                    <div className="px-3 py-2">
-                      <span className="text-gray-500">Conhecida por</span>
-                      <p className="text-gray-300">Preservação cultural analógica</p>
-                      <p className="text-gray-300">Arte independente</p>
-                      <p className="text-gray-300">Movimentos retrô de Night City</p>
-                    </div>
-                    <div className="px-3 py-2">
-                      <span className="text-gray-500">Movimentos artísticos</span>
-                      <p className="text-gray-300">Arte neo-vintage</p>
-                      <p className="text-gray-300">Preservacionismo cultural</p>
-                      <p className="text-gray-300">Jazz underground independente</p>
+                      <p className="text-gray-300">Produtora musical</p>
+                      <p className="text-gray-300">Curadora de áudio</p>
                     </div>
                     <div className="px-3 py-2">
                       <span className="text-gray-500">Afiliações</span>
-                      <p className="text-gray-300">Círculos artísticos independentes de Night City</p>
-                      <p className="text-gray-300">Centros culturais de Heywood e Pacifica</p>
+                      <p className="text-gray-300">Estúdios independentes</p>
+                      <p className="text-gray-300">Coletivo de jazz underground</p>
+                    </div>
+                    <div className="px-3 py-2">
+                      <span className="text-gray-500">Anos de atividade</span>
+                      <p className="text-gray-300">2028 — Presente</p>
+                    </div>
+                    <div className="px-3 py-2">
+                      <span className="text-gray-500">Pais</span>
+                      <Link href="/" className="text-red-500 hover:underline block">Chidi Aleksandar Nikolic</Link>
+                      <Link href="/wiki/eleanor-nikolic" className="text-red-500 hover:underline block">Eleanor Vivienne Moreau Nikolic</Link>
+                    </div>
+                    <div className="px-3 py-2">
+                      <span className="text-gray-500">Irmã</span>
+                      <Link href="/wiki/daniela-nikolic" className="text-red-500 hover:underline block">Daniela Nikolic</Link>
+                    </div>
+                    <div className="px-3 py-2">
+                      <span className="text-gray-500">Conhecido por</span>
+                      <p className="text-gray-300">Produção de jazz analógico</p>
+                      <p className="text-gray-300">Preservação de áudio vintage</p>
+                      <p className="text-gray-300">Colunismo musical independente</p>
+                    </div>
+                    <div className="px-3 py-2">
+                      <span className="text-gray-500">Presença digital</span>
+                      <p className="text-yellow-500">Extremamente limitada</p>
                     </div>
                     <div className="px-3 py-2">
                       <span className="text-gray-500">Status legal</span>
                       <p className="text-green-500">Sem antecedentes criminais registrados</p>
                     </div>
                     <div className="px-3 py-2">
-                      <span className="text-gray-500">Causa da morte</span>
-                      <p className="text-yellow-500">Explosão em centro de imprensa independente</p>
-                      <p className="text-gray-400 text-xs">(investigação contra Arasaka em andamento)</p>
-                    </div>
-                    <div className="px-3 py-2">
-                      <span className="text-gray-500">Legado</span>
-                      <p className="text-gray-300">Figura simbólica da resistência cultural analógica em Night City</p>
+                      <span className="text-gray-500">Legado familiar</span>
+                      <p className="text-gray-300">Continuidade do trabalho artístico de Eleanor</p>
                     </div>
                   </div>
                 </div>
@@ -282,51 +264,45 @@ export default function EleanorNikolicPage() {
               {/* Article Content */}
               <article className="prose prose-invert max-w-none flex-1 order-1">
                 <p className="text-gray-300 leading-relaxed mb-4">
-                  <strong className="text-white">Eleanor Vivienne Moreau Nikolic</strong> (Marseille, 12 de setembro de 1972 — Night City, 17 de novembro de 2009) foi uma artista plástica, pianista e curadora cultural franco-americana reconhecida dentro dos círculos artísticos independentes de Night City durante o início do século XXI. Tornou-se conhecida por seu trabalho voltado à preservação estética e cultural de mídias físicas antigas em meio ao avanço acelerado da digitalização corporativa e da cultura tecnológica pós-Guerra Corporativa.
+                  <strong className="text-white">Sophia Eleanor Nikolic</strong> (Westbrook, 22 de março de 2008) é uma produtora musical e curadora de áudio independente, ativa em círculos artísticos underground de Night City. Conhecida por sua abordagem minimalista à produção de áudio analógico, Sophia segue o legado cultural iniciado por sua mãe, <Link href="/wiki/eleanor-nikolic" className="text-red-500 hover:underline">Eleanor Vivienne Moreau Nikolic</Link>, mantendo presença digital extremamente limitada e dedicando-se quase inteiramente ao trabalho presencial em estúdios independentes.
                 </p>
                 
                 <p className="text-gray-300 leading-relaxed mb-4">
-                  Filha de um restaurador cinematográfico e de uma cantora de jazz, Eleanor cresceu em ambientes ligados à música clássica, cinema analógico e artes tradicionais europeias. Desde jovem, demonstrava forte interesse por objetos históricos, decoração vintage e movimentos culturais norte-americanos das décadas de 1950 e 1960, temas que posteriormente definiriam sua identidade artística.
+                  Filha de <Link href="/" className="text-red-500 hover:underline">Chidi Aleksandar Nikolic</Link> e Eleanor, Sophia cresceu em um ambiente que combatia ativamente a cultura corporativa digital, sendo exposta desde a infância a mídias físicas, instrumentos analógicos e tradições artísticas analógicas. Sua trajetória profissional reflete essa origem, marcada pela recusa deliberada a modernização corporativa e integração digital.
                 </p>
 
                 <h2 className="text-xl font-serif font-semibold text-red-600 mt-6 mb-3 border-b border-gray-700 pb-2">Carreira artística</h2>
                 
                 <p className="text-gray-300 leading-relaxed mb-4">
-                  Durante o final da década de 1990, mudou-se para Night City em busca de espaço dentro da cena artística alternativa que surgia entre distritos independentes da cidade. Em contraste ao crescimento da arte digital corporativa, Eleanor defendia a preservação de materiais físicos, restauração manual de obras antigas e experiências culturais presenciais.
+                  Sophia iniciou sua carreira musical aos vinte anos, após completar formação autodidata em produção de áudio e técnicas de gravação analógica. Diferentemente de produtores corporativos que utilizam sistemas digitalizados, Sophia trabalha exclusivamente com equipamentos de áudio vintage: gravadores de fita magnética, mesas de som mecânicas, microfones de válvula e sistemas de amplificação de era analógica.
                 </p>
 
                 <p className="text-gray-300 leading-relaxed mb-4">
-                  Seu trabalho tornou-se particularmente conhecido em Heywood, Pacifica e Westbrook, onde organizava apresentações de jazz analógico, exposições de restauração artística, sessões de cinema clássico e encontros culturais independentes sem financiamento corporativo.
+                  Seu trabalho concentra-se principalmente na produção e curadoria de sessões de jazz underground, gênero que serviu como ponte emocional entre ela e sua mãe falecida. Produz álbuns de artistas independentes em Heywood e Pacifica, frequentemente trabalhando com músicos que rejeitam interfaces corporativas e preferem experiências artísticas puramente presenciais.
                 </p>
 
                 <p className="text-gray-300 leading-relaxed mb-4">
-                  Apesar de nunca ter alcançado fama comercial em grande escala, Eleanor desenvolveu forte influência em círculos artísticos underground, sendo frequentemente descrita por críticos independentes como <em className="text-gray-200">&quot;uma mulher deslocada no tempo, tentando preservar humanidade em uma cidade que abandonava memórias.&quot;</em>
+                  A produção musical de Sophia caracteriza-se por qualidade sonora extraordinária alcançada através de métodos completamente analógicos, criando discos de vinil que se tornaram objetos de culto entre colecionadores de mídia física. Sua recusa a distribuição digital tornou seu trabalho ainda mais inacessível e desejado, criando paradoxo onde a obscuridade amplifica seu valor cultural.
                 </p>
 
-                <h2 className="text-xl font-serif font-semibold text-red-600 mt-6 mb-3 border-b border-gray-700 pb-2">Vida pessoal</h2>
+                <h2 className="text-xl font-serif font-semibold text-red-600 mt-6 mb-3 border-b border-gray-700 pb-2">Vida pessoal e isolamento digital</h2>
                 
                 <p className="text-gray-300 leading-relaxed mb-4">
-                  Em 2002, conheceu o jornalista investigativo <Link href="/" className="text-red-500 hover:underline">Chidi Aleksandar Nikolic</Link> durante um evento beneficente ligado à imprensa independente. O relacionamento dos dois tornou-se conhecido entre jornalistas e artistas locais pela forte oposição entre suas personalidades: enquanto Chidi era associado à rigidez investigativa e ao ambiente político de Night City, Eleanor era vista como uma figura calma, melancólica e profundamente ligada à preservação cultural.
+                  Sophia é notoriamente reclusa, preferindo comunicação presencial e recusando-se deliberadamente a participar de redes sociais digitais, plataformas de streaming ou qualquer forma de presença online corporativa. Sua presença digital é praticamente inexistente, com informações públicas limitadas a menções ocasionais em arquivos culturais independentes.
                 </p>
 
                 <p className="text-gray-300 leading-relaxed mb-4">
-                  Casaram-se em 2005 em uma cerimônia privada realizada em Westbrook. Grande parte da residência da família Nikolic passou a refletir os gostos pessoais de Eleanor, especialmente sua obsessão estética pelos anos 1960. O casal teve duas filhas: <Link href="#" className="text-red-500 hover:underline">Daniela Nikolic</Link> e <Link href="#" className="text-red-500 hover:underline">Sophia Nikolic</Link>.
+                  Continua vivendo em Westbrook, na residência familiar onde cresceu, cercada pelos objetos colecionados por sua mãe. Mantém relacionamento próximo com sua irmã <Link href="/wiki/daniela-nikolic" className="text-red-500 hover:underline">Daniela Nikolic</Link>, apesar de suas escolhas de vida divergentes. Com seu pai, compartilha reverência pela memória de Eleanor e dedicação à preservação de seu legado artístico.
                 </p>
 
-                <h2 className="text-xl font-serif font-semibold text-red-600 mt-6 mb-3 border-b border-gray-700 pb-2">Morte</h2>
-                
-                <p className="text-gray-300 leading-relaxed mb-4">
-                  Em 17 de novembro de 2009, Eleanor morreu durante uma explosão ocorrida em um centro de imprensa independente em Heywood. O caso foi oficialmente registrado como acidente estrutural causado por falha energética. Entretanto, jornalistas independentes e antigos colegas de Chidi Nikolic associaram o ocorrido a investigações conduzidas contra subsidiárias da <Link href="#" className="text-red-500 hover:underline">Arasaka</Link> naquele mesmo período.
-                </p>
-
-                <h2 className="text-xl font-serif font-semibold text-red-600 mt-6 mb-3 border-b border-gray-700 pb-2">Legado</h2>
+                <h2 className="text-xl font-serif font-semibold text-red-600 mt-6 mb-3 border-b border-gray-700 pb-2">Significado cultural</h2>
 
                 <p className="text-gray-300 leading-relaxed mb-4">
-                  Após a morte da esposa, Chidi preservou praticamente todos os objetos, móveis e hábitos relacionados à Eleanor, transformando a residência em um memorial permanente. A casa é frequentemente descrita por visitantes como &quot;uma cápsula do tempo em meio ao colapso urbano de Night City&quot;.
+                  Sophia Nikolic representa uma forma contemporânea de resistência cultural: a recusa ativa à integração digital corporativa. Em uma era onde a conformidade tecnológica é praticamente obrigatória, sua existência como produtora artística sem nenhum rastro digital mensurável torna-se ato político implícito.
                 </p>
 
                 <p className="text-gray-300 leading-relaxed mb-4">
-                  Décadas após sua morte, Eleanor continua sendo citada em arquivos culturais independentes de Night City como símbolo da resistência artística analógica durante a ascensão da cultura corporativa digital no pós-guerra.
+                  Círculos artísticos independentes a reconhecem como continuadora do trabalho de sua mãe, mantendo viva uma forma de expressão artística que celebra materialidade, impermanência e presença humana. Em 2045, continua produzindo silenciosamente em Westbrook, distante do escrutínio público, dedicada ao trabalho artístico que honra o legado de Eleanor.
                 </p>
               </article>
             </div>
@@ -342,16 +318,17 @@ export default function EleanorNikolicPage() {
           )}
         </div>
 
-        {/* Side Ad Right */}
+        {/* Side Ads Right */}
         <aside className="hidden lg:block w-48 p-4">
-          <div className="sticky top-4 bg-gray-900 border border-gray-800 rounded-lg p-4 text-center">
-            <span className="text-yellow-500 text-xs font-bold uppercase tracking-wider">Anúncio</span>
-            <div className="mt-3 space-y-2">
-              <div className="w-full h-24 bg-gradient-to-br from-blue-900 to-blue-700 rounded flex items-center justify-center">
-                <span className="text-white font-bold text-lg">CloudHost</span>
+          <div className="sticky top-4 bg-gray-900 border border-gray-800 rounded-lg p-4 text-center space-y-4">
+            <div>
+              <span className="text-yellow-500 text-xs font-bold uppercase tracking-wider">Anúncio</span>
+              <div className="mt-2 space-y-2">
+                <div className="w-full h-24 bg-gradient-to-br from-purple-900 to-purple-700 rounded flex items-center justify-center">
+                  <span className="text-white font-bold text-sm">MindSpace</span>
+                </div>
+                <p className="text-gray-400 text-xs">Realidade virtual premium</p>
               </div>
-              <p className="text-gray-400 text-xs">Hospedagem rápida</p>
-              <p className="text-blue-400 text-sm font-semibold">Teste grátis!</p>
             </div>
           </div>
         </aside>

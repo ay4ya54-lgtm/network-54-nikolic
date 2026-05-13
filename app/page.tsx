@@ -231,8 +231,8 @@ export default function HomePage() {
                     </div>
                     <div className="px-3 py-2">
                       <span className="text-gray-500">Filhos</span>
-                      <p className="text-red-500 hover:underline cursor-pointer">Daniela Nikolic</p>
-                      <p className="text-red-500 hover:underline cursor-pointer">Sophia Nikolic</p>
+                      <Link href="/wiki/daniela-nikolic" className="text-red-500 hover:underline block">Daniela Nikolic</Link>
+                      <Link href="/wiki/sophia-nikolic" className="text-red-500 hover:underline block">Sophia Nikolic</Link>
                     </div>
                     <div className="px-3 py-2">
                       <span className="text-gray-500">Netos</span>
@@ -300,8 +300,8 @@ export default function HomePage() {
 
               <h2 className="text-xl font-serif font-semibold text-red-600 mt-6 mb-3 border-b border-gray-700 pb-2">Família</h2>
               
-              <p className="text-gray-300 leading-relaxed mb-4">
-                Nikolic possui duas filhas: <Link href="#" className="text-red-500 hover:underline">Daniela Nikolic</Link>, médica renomada da <Link href="#" className="text-red-500 hover:underline">Trauma Team</Link>, e <Link href="#" className="text-red-500 hover:underline">Sophia Nikolic</Link>, figura de baixa exposição pública com presença digital extremamente limitada. Também é avô de <Link href="#" className="text-red-500 hover:underline">Penelope Nikolic</Link>, estudante universitária que atualmente reside com ele.
+                <p className="text-gray-300 leading-relaxed mb-4">
+                Nikolic possui duas filhas: <Link href="/wiki/daniela-nikolic" className="text-red-500 hover:underline">Daniela Nikolic</Link>, médica renomada da <Link href="#" className="text-red-500 hover:underline">Trauma Team</Link>, e <Link href="/wiki/sophia-nikolic" className="text-red-500 hover:underline">Sophia Nikolic</Link>, figura de baixa exposição pública com presença digital extremamente limitada. Também é avô de <Link href="#" className="text-red-500 hover:underline">Penelope Nikolic</Link>, estudante universitária que atualmente reside com ele.
               </p>
               </article>
             </div>

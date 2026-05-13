@@ -91,6 +91,11 @@ export default function MarijaNikolicPage() {
                   <Link href="/" className="text-neon-cyan hover:text-neon-magenta transition-colors block">Chidi Nikolic</Link>
                 </div>
                 <div className="px-3 py-2">
+                  <span className="text-neon-cyan text-xs uppercase">Filhos</span>
+                  <p className="text-gray-300">Martin Nikolic</p>
+                  <p className="text-gray-500 text-xs">(sem perfil público)</p>
+                </div>
+                <div className="px-3 py-2">
                   <span className="text-neon-cyan text-xs uppercase">Sobrinhas</span>
                   <Link href="/wiki/daniela-nikolic" className="text-neon-cyan hover:text-neon-magenta transition-colors block">Daniela Nikolic</Link>
                   <Link href="/wiki/sophia-nikolic" className="text-neon-cyan hover:text-neon-magenta transition-colors block">Sophia Nikolic</Link>
@@ -98,6 +103,10 @@ export default function MarijaNikolicPage() {
                 <div className="px-3 py-2">
                   <span className="text-neon-cyan text-xs uppercase">Status legal</span>
                   <p className="text-neon-green">Sem registros criminais</p>
+                </div>
+                <div className="px-3 py-2">
+                  <span className="text-neon-cyan text-xs uppercase">Presença digital</span>
+                  <p className="text-neon-yellow text-xs">Mínima. Dados fragmentados.</p>
                 </div>
               </div>
             </div>
@@ -116,27 +125,67 @@ export default function MarijaNikolicPage() {
           {/* Article Content */}
           <article className="flex-1 order-1 space-y-4">
             <p className="text-gray-300 leading-relaxed">
-              <strong className="text-neon-green">Marija Aleksandar Nikolic</strong> (Neo-Iugoslávia, 1968) é uma acadêmica e pesquisadora neo-iugoslava, irmã mais velha do jornalista <Link href="/" className="text-neon-cyan hover:text-neon-magenta transition-colors">Chidi Aleksandar Nikolic</Link>.
+              <strong className="text-neon-green">Marija Aleksandar Nikolic</strong> (Neo-Iugoslávia, 1968) é uma acadêmica e pesquisadora neo-iugoslava, irmã mais velha do jornalista investigativo <Link href="/" className="text-neon-cyan hover:text-neon-magenta transition-colors">Chidi Aleksandar Nikolic</Link>. Diferentemente de seu irmão, que emigrou para Night City ainda jovem, Marija permaneceu na Neo-Iugoslávia ao longo de toda a sua vida adulta, construindo uma trajetória discreta dentro do meio acadêmico regional.
             </p>
-            
+
             <p className="text-gray-300 leading-relaxed">
-              Diferentemente de seu irmão, que emigrou para Night City nas décadas anteriores, Marija permaneceu na <span className="text-neon-green">Neo-Iugoslávia</span>, onde construiu carreira no meio acadêmico. Poucas informações públicas estão disponíveis sobre suas atividades específicas.
+              Poucas informações públicas verificáveis estão disponíveis sobre Marija Nikolic. Seu perfil digital é extremamente fragmentado, consistindo majoritariamente em referências genealógicas associadas ao nome de seu irmão e registros acadêmicos pontuais de difícil confirmação. Em Night City, seu nome é conhecido apenas dentro do círculo próximo da família Nikolic.
             </p>
 
             <h2 className="text-xl font-bold text-neon-cyan mt-8 mb-3 border-b border-neon-cyan/30 pb-2 uppercase tracking-wider">
-              Família
+              Origem familiar
             </h2>
-            
+
             <p className="text-gray-300 leading-relaxed">
-              Marija é filha de uma família tradicional neo-iugoslava com fortes ligações ao meio acadêmico e político regional. Sua família de origem incluía intelectuais e profissionais liberais, ambiente que influenciou tanto sua trajetória quanto a de seu irmão Chidi.
+              Marija é filha de uma família tradicional neo-iugoslava com fortes ligações ao meio acadêmico e político regional. Seu pai era professor universitário especializado em história europeia contemporânea, e sua mãe atuava como tradutora oficial em conferências diplomáticas. O ambiente intelectual e politicamente consciente da família influenciou profundamente tanto Marija quanto seu irmão mais novo Chidi, cada um seguindo caminhos diferentes de questionamento e documentação da realidade social.
+            </p>
+
+            <p className="text-gray-300 leading-relaxed">
+              Enquanto Chidi canalizou essa influência para o jornalismo investigativo em Night City, Marija optou por permanecer na Europa, desenvolvendo trabalho acadêmico dentro de estruturas mais tradicionais e menos expostas.
+            </p>
+
+            <h2 className="text-xl font-bold text-neon-cyan mt-8 mb-3 border-b border-neon-cyan/30 pb-2 uppercase tracking-wider">
+              Carreira acadêmica
+            </h2>
+
+            <p className="text-gray-300 leading-relaxed">
+              As informações sobre a carreira de Marija são escassas e de difícil verificação independente. Registros fragmentados a associam a atividades de pesquisa em instituições neo-iugoslavas durante as décadas de 1990 e 2000, possivelmente ligadas a estudos de história contemporânea ou ciências sociais. Nenhuma publicação significativa foi localizada em arquivos digitais públicos de Night City com seu nome como autora principal.
+            </p>
+
+            <p className="text-gray-300 leading-relaxed">
+              Esta escassez de registros pode resultar de vários fatores: a fragmentação de arquivos acadêmicos europeus durante os conflitos corporativos das décadas seguintes, a ausência de digitalização ampla de publicações neo-iugoslavas, ou simplesmente uma trajetória acadêmica de perfil intencionalmente baixo dentro de instituições de alcance regional.
             </p>
 
             <h2 className="text-xl font-bold text-neon-cyan mt-8 mb-3 border-b border-neon-cyan/30 pb-2 uppercase tracking-wider">
               Relação com Chidi
             </h2>
-            
+
             <p className="text-gray-300 leading-relaxed">
-              Apesar da distância geográfica, Marija mantém contato regular com seu irmão. Após a morte de <Link href="/wiki/eleanor-nikolic" className="text-neon-cyan hover:text-neon-magenta transition-colors">Eleanor</Link>, ofereceu apoio à família e manteve presença nas vidas de suas sobrinhas <Link href="/wiki/daniela-nikolic" className="text-neon-cyan hover:text-neon-magenta transition-colors">Daniela</Link> e <Link href="/wiki/sophia-nikolic" className="text-neon-cyan hover:text-neon-magenta transition-colors">Sophia</Link>.
+              Apesar da distância geográfica e das diferenças de trajetória, Marija e Chidi mantiveram contato regular ao longo das décadas. Fontes próximas à família descrevem a relação entre os irmãos como marcada por respeito mútuo e afeto discreto, típico da cultura familiar neo-iugoslava de sua geração.
+            </p>
+
+            <p className="text-gray-300 leading-relaxed">
+              Após a morte de <Link href="/wiki/eleanor-nikolic" className="text-neon-cyan hover:text-neon-magenta transition-colors">Eleanor Vivienne Moreau Nikolic</Link> em 2009, Marija teria viajado a Night City para apoiar o irmão e as sobrinhas recém-órfãs de mãe, <Link href="/wiki/daniela-nikolic" className="text-neon-cyan hover:text-neon-magenta transition-colors">Daniela</Link> e <Link href="/wiki/sophia-nikolic" className="text-neon-cyan hover:text-neon-magenta transition-colors">Sophia</Link>. Esta visita representa uma das poucas ocasiões documentadas de sua presença em Night City.
+            </p>
+
+            <h2 className="text-xl font-bold text-neon-cyan mt-8 mb-3 border-b border-neon-cyan/30 pb-2 uppercase tracking-wider">
+              Filho: Martin Nikolic
+            </h2>
+
+            <p className="text-gray-300 leading-relaxed">
+              Marija é mãe de <strong className="text-neon-green">Martin Nikolic</strong>, figura ainda mais obscura do que a própria mãe dentro dos registros disponíveis. Nenhum perfil público existe para Martin, e seu nome aparece apenas em referências genealógicas associadas à família Nikolic. A data de nascimento, residência atual e atividades profissionais de Martin são completamente desconhecidas nos sistemas de informação pública acessíveis em 2045.
+            </p>
+
+            <p className="text-gray-300 leading-relaxed">
+              A ausência de informações sobre Martin é notável até mesmo pelo padrão já restrito estabelecido por sua mãe. Analistas de dados independentes que ocasionalmente monitoram a família Nikolic descrevem Martin como um caso extremo de invisibilidade social dentro de uma família que, com exceção de Chidi e Daniela, tendeu historicamente a manter baixo perfil público.
+            </p>
+
+            <h2 className="text-xl font-bold text-neon-cyan mt-8 mb-3 border-b border-neon-cyan/30 pb-2 uppercase tracking-wider">
+              Status em 2045
+            </h2>
+
+            <p className="text-gray-300 leading-relaxed">
+              Em 2045, Marija teria aproximadamente 77 anos. Não existem informações públicas confirmadas sobre seu estado de saúde, localização atual ou atividades. Seu último contato documentado com membros da família em Night City é impreciso, com estimativas variando entre anos recentes e a última visita registrada após a morte de Eleanor.
             </p>
           </article>
         </div>

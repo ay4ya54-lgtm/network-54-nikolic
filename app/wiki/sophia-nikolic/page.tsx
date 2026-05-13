@@ -150,21 +150,45 @@ export default function SophiaNikolicPage() {
             <h2 className="text-xl font-bold text-neon-cyan mt-8 mb-3 border-b border-neon-cyan/30 pb-2 uppercase tracking-wider">
               Infância e juventude
             </h2>
-            
+
             <p className="text-gray-300 leading-relaxed">
-              Sophia tinha apenas um ano de idade quando sua mãe faleceu em 2009, o que resultou em uma infância marcada pela ausência materna e pela preservação das memórias de Eleanor através do pai e da irmã mais velha.
+              Sophia tinha apenas um ano de idade quando sua mãe, <Link href="/wiki/eleanor-nikolic" className="text-neon-cyan hover:text-neon-magenta transition-colors">Eleanor Vivienne Moreau Nikolic</Link>, faleceu em novembro de 2009 durante a explosão em um centro de imprensa independente em Heywood. Por ser ainda bebê à época, Sophia não guarda nenhuma memória direta da mãe, construindo sua relação com Eleanor através de fotografias, gravações e dos relatos do pai e da irmã mais velha <Link href="/wiki/daniela-nikolic" className="text-neon-cyan hover:text-neon-magenta transition-colors">Daniela</Link>.
+            </p>
+
+            <p className="text-gray-300 leading-relaxed">
+              Cresceu em <span className="text-neon-cyan">Westbrook</span>, na residência que seu pai preservou praticamente intacta com a estética cultural dos anos 1960 que Eleanor cultivava. Este ambiente saturado de memória e objetos históricos moldou profundamente a sensibilidade de Sophia, que desenvolveu desde jovem um apreço por elementos analógicos, materiais físicos e formas de existência fora dos circuitos digitais predominantes em Night City.
+            </p>
+
+            <p className="text-gray-300 leading-relaxed">
+              Sua formação aconteceu à sombra da ausência materna e do luto contínuo do pai, mas também sob a influência protetora e prática de Daniela, que assumiu papel quase materno na criação da irmã mais nova. As duas desenvolveram um vínculo particularmente forte, mantido até o período adulto apesar de seus estilos de vida radicalmente diferentes.
             </p>
 
             <h2 className="text-xl font-bold text-neon-cyan mt-8 mb-3 border-b border-neon-cyan/30 pb-2 uppercase tracking-wider">
-              Vida adulta
+              Vida adulta e perfil público
             </h2>
-            
+
             <p className="text-gray-300 leading-relaxed">
-              Na idade adulta, Sophia optou por manter-se afastada de exposição pública, evitando redes sociais, aparições midiáticas e registros digitais extensivos. Esta escolha é frequentemente interpretada como resposta à tragédia familiar e ao histórico de investigações corporativas associadas à morte de sua mãe.
+              Na idade adulta, Sophia optou deliberadamente por manter-se afastada de qualquer forma de exposição pública. Evita redes sociais, aparições midiáticas, registros digitais extensivos e qualquer conexão com estruturas corporativas. Sua presença nos sistemas de informação pública é mínima e dificilmente rastreável, uma característica que analistas associam tanto à influência de sua criação quanto a uma escolha consciente motivada pelo histórico familiar.
             </p>
 
             <p className="text-gray-300 leading-relaxed">
-              Mantém contato regular com sua irmã <Link href="/wiki/daniela-nikolic" className="text-neon-cyan hover:text-neon-magenta transition-colors">Daniela</Link> e visita frequentemente o pai em <span className="text-neon-cyan">Westbrook</span>.
+              A morte de Eleanor em circunstâncias ligadas a investigações contra subsidiárias da <span className="text-neon-red">Arasaka</span> deixou marca permanente na família, e Sophia parece ter internalizado de forma profunda a lição implícita: visibilidade pública pode ser perigosa. Diferentemente da irmã Daniela, que encontrou proteção dentro de uma corporação poderosa como a Trauma Team, Sophia escolheu o caminho oposto — a invisibilidade como forma de segurança.
+            </p>
+
+            <h2 className="text-xl font-bold text-neon-cyan mt-8 mb-3 border-b border-neon-cyan/30 pb-2 uppercase tracking-wider">
+              Maternidade
+            </h2>
+
+            <p className="text-gray-300 leading-relaxed">
+              Sophia é mãe de <strong className="text-neon-purple">Penelope Nikolic</strong>, atualmente estudante universitária que reside com ela em <span className="text-neon-cyan">Westbrook</span>. Nenhuma informação pública está disponível sobre o pai de Penelope. A relação entre Sophia e a filha é descrita por pessoas próximas à família como próxima e protetora, com Sophia mantendo para Penelope o mesmo ambiente de discrição e baixo perfil digital que ela própria escolheu para si.
+            </p>
+
+            <h2 className="text-xl font-bold text-neon-cyan mt-8 mb-3 border-b border-neon-cyan/30 pb-2 uppercase tracking-wider">
+              Relações familiares
+            </h2>
+
+            <p className="text-gray-300 leading-relaxed">
+              Sophia mantém contato regular com sua irmã <Link href="/wiki/daniela-nikolic" className="text-neon-cyan hover:text-neon-magenta transition-colors">Daniela</Link>, apesar das diferenças de estilo de vida. Visita frequentemente o pai <Link href="/" className="text-neon-cyan hover:text-neon-magenta transition-colors">Chidi</Link> em Westbrook, onde as duas partilham a mesma memória física e afetiva da mãe que jamais conheceu plenamente. É descrita por Chidi, nas raras ocasiões em que fala publicamente sobre a família, como a filha que mais herdou a sensibilidade artística e cultural de Eleanor, ainda que não a expresse pelos mesmos caminhos.
             </p>
           </article>
         </div>

@@ -139,23 +139,59 @@ export default function DanielaNikolicPage() {
             </p>
 
             <h2 className="text-xl font-bold text-neon-cyan mt-8 mb-3 border-b border-neon-cyan/30 pb-2 uppercase tracking-wider">
-              Formação e carreira
+              Infância e impacto da perda materna
             </h2>
-            
+
             <p className="text-gray-300 leading-relaxed">
-              Formou-se como médica generalista pela Universidade de Night City em 2027, completando sua especialização em medicina de trauma pela Academy of Trauma Medicine em 2031. Em 2033, foi recrutada pela <span className="text-neon-red">Trauma Team International</span>.
+              Daniela tinha três anos quando sua mãe, <Link href="/wiki/eleanor-nikolic" className="text-neon-cyan hover:text-neon-magenta transition-colors">Eleanor Vivienne Moreau Nikolic</Link>, faleceu em novembro de 2009 na explosão de um centro de imprensa em Heywood. Diferentemente da irmã <Link href="/wiki/sophia-nikolic" className="text-neon-cyan hover:text-neon-magenta transition-colors">Sophia</Link>, Daniela guarda fragmentos de memória da mãe, imagens e sensações de uma criança pequena que via Eleanor ao piano ou organizando exposições culturais em espaços do bairro.
             </p>
 
             <p className="text-gray-300 leading-relaxed">
-              Particularmente conhecida por sua capacidade de lidar com ferimentos relacionados a modificações corporais extremas e implantes cibernéticos, Daniela desenvolveu especialização única em compatibilidade cirúrgica entre sistemas biológicos e tecnológicos.
+              A perda prematura de Eleanor moldou de forma decisiva a trajetória de Daniela. Pessoas que acompanharam sua formação descrevem uma jovem que, desde a adolescência, demonstrava obsessão com a ideia de salvar vidas — uma resposta direta, segundo analistas, à incapacidade de salvar a mãe. Esta motivação transformou-se no combustível de uma das carreiras médicas mais dedicadas de sua geração em Night City.
+            </p>
+
+            <h2 className="text-xl font-bold text-neon-cyan mt-8 mb-3 border-b border-neon-cyan/30 pb-2 uppercase tracking-wider">
+              Formação médica
+            </h2>
+
+            <p className="text-gray-300 leading-relaxed">
+              Formou-se como médica generalista pela Universidade de Night City em 2027, com distinção em cirurgia de emergência e traumatologia. Completou sua especialização em medicina de trauma pela Academy of Trauma Medicine em 2031, onde desenvolveu pesquisa específica sobre compatibilidade cirúrgica entre tecidos biológicos e implantes cibernéticos — uma área de crescente importância em Night City, onde a linha entre corpo humano e tecnologia se torna progressivamente nebulosa.
+            </p>
+
+            <p className="text-gray-300 leading-relaxed">
+              Sua tese de especialização, intitulada <em className="text-neon-cyan">Compatibilidade Biotech em Trauma de Alto Impacto: Protocolos para Pacientes com Modificação Cibernética Extensiva</em>, foi reconhecida pela Academia como uma das contribuições mais relevantes da década na área de medicina de campo em ambientes urbanos de alta densidade corporativa.
+            </p>
+
+            <h2 className="text-xl font-bold text-neon-cyan mt-8 mb-3 border-b border-neon-cyan/30 pb-2 uppercase tracking-wider">
+              Carreira na Trauma Team
+            </h2>
+
+            <p className="text-gray-300 leading-relaxed">
+              Em 2033, foi recrutada pela <span className="text-neon-red" style={{ textShadow: '0 0 5px #ff0040' }}>Trauma Team International</span> após se destacar em operações de campo durante os conflitos corporativos menores que varreram <span className="text-neon-cyan">Heywood</span> e <span className="text-neon-cyan">Pacifica</span> no início da década de 2030. Seu recrutamento foi descrito internamente como prioritário, dado o perfil excepcional de suas avaliações clínicas e sua capacidade demonstrada de tomar decisões cirúrgicas críticas sob pressão extrema.
+            </p>
+
+            <p className="text-gray-300 leading-relaxed">
+              Particularmente reconhecida por sua capacidade de lidar com ferimentos relacionados a modificações corporais extremas — implantes de combate danificados, cyberware de alto custo com falha sistêmica, e traumas causados por armas anti-cibernéticas — Daniela desenvolveu protocolos próprios que passaram a ser utilizados internamente pela Trauma Team como referência para situações de alto grau de modificação corporal.
+            </p>
+
+            <p className="text-gray-300 leading-relaxed">
+              Trabalha atualmente baseada no complexo da Trauma Team em <span className="text-neon-cyan">Corpo Plaza</span>, respondendo a chamados de alto perfil em toda a extensão de Night City. Clientes corporativos do nível Platinum têm acesso prioritário à sua equipe durante emergências de campo.
             </p>
 
             <h2 className="text-xl font-bold text-neon-cyan mt-8 mb-3 border-b border-neon-cyan/30 pb-2 uppercase tracking-wider">
               Vida pessoal
             </h2>
-            
+
             <p className="text-gray-300 leading-relaxed">
-              Daniela mantém residência em <span className="text-neon-cyan">Corpo Plaza</span>. Possui forte relacionamento com sua irmã <Link href="/wiki/sophia-nikolic" className="text-neon-cyan hover:text-neon-magenta transition-colors">Sophia Nikolic</Link>. A morte de sua mãe em 2009 deixou impacto significativo durante seus anos de formação.
+              Daniela mantém residência em <span className="text-neon-cyan">Corpo Plaza</span>, próxima ao complexo operacional da Trauma Team, o que lhe permite resposta rápida a chamados de emergência. Seu estilo de vida é marcado pela intensidade profissional, com longas jornadas de plantão e disponibilidade quase permanente para intervenções de campo.
+            </p>
+
+            <p className="text-gray-300 leading-relaxed">
+              Apesar da distância física em relação à casa paterna em Westbrook, mantém forte vínculo afetivo com o pai <Link href="/" className="text-neon-cyan hover:text-neon-magenta transition-colors">Chidi</Link> e com a irmã <Link href="/wiki/sophia-nikolic" className="text-neon-cyan hover:text-neon-magenta transition-colors">Sophia</Link>. Visita a residência familiar regularmente, onde o ambiente preservado por Chidi em memória de Eleanor funciona como âncora emocional para as duas filhas.
+            </p>
+
+            <p className="text-gray-300 leading-relaxed">
+              Pessoas próximas a Daniela descrevem uma mulher de presença forte e temperamento direto, forjado em anos de decisões de vida ou morte em campo. Sua relação com a morte, inevitavelmente moldada pela perda materna precoce e pela natureza de sua profissão, é descrita como serena e pragmática — uma paz conquistada, não herdada.
             </p>
           </article>
         </div>

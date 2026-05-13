@@ -2,13 +2,38 @@
 
 import { useState } from "react"
 import Link from "next/link"
+import Image from "next/image"
+import { useRouter } from "next/navigation"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Search, Zap, Shield, Cpu, Radio, Eye, AlertTriangle } from "lucide-react"
 
+const wikiPages = [
+  { name: "Chidi Nikolic", slug: "/", keywords: ["chidi", "nikolic", "jornalista", "escritor"] },
+  { name: "Eleanor Nikolic", slug: "/wiki/eleanor-nikolic", keywords: ["eleanor", "moreau", "artista", "pianista"] },
+  { name: "Daniela Nikolic", slug: "/wiki/daniela-nikolic", keywords: ["daniela", "trauma team", "médica"] },
+  { name: "Sophia Nikolic", slug: "/wiki/sophia-nikolic", keywords: ["sophia", "produtora", "jazz", "música"] },
+  { name: "Marija Nikolic", slug: "/wiki/marija-nikolic", keywords: ["marija", "irmã"] },
+  { name: "Martin Nikolic", slug: "/wiki/martin-nikolic", keywords: ["martin", "sobrinho"] },
+]
+
 export default function HomePage() {
+  const router = useRouter()
   const [searchQuery, setSearchQuery] = useState("")
   const [activeTab, setActiveTab] = useState<"artigo" | "discussao">("artigo")
+  const [showResults, setShowResults] = useState(false)
+
+  const filteredPages = wikiPages.filter((page) =>
+    page.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+    page.keywords.some(k => k.toLowerCase().includes(searchQuery.toLowerCase()))
+  )
+
+  const handleSearch = (e: React.FormEvent) => {
+    e.preventDefault()
+    if (filteredPages.length > 0) {
+      router.push(filteredPages[0].slug)
+    }
+  }
 
   return (
     <div className="min-h-screen bg-cyber-dark relative overflow-hidden">
@@ -47,16 +72,40 @@ export default function HomePage() {
               <span className="text-xs text-neon-yellow uppercase tracking-widest">DataNet Archive</span>
             </div>
           </Link>
-          <div className="relative w-72">
-            <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-neon-cyan" />
+          <form onSubmit={handleSearch} className="relative w-72">
+            <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-neon-cyan z-10" />
             <Input
               type="text"
               placeholder="PESQUISAR DATABANK..."
               value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
+              onChange={(e) => {
+                setSearchQuery(e.target.value)
+                setShowResults(true)
+              }}
+              onFocus={() => setShowResults(true)}
+              onBlur={() => setTimeout(() => setShowResults(false), 200)}
               className="pl-10 bg-cyber-dark border-neon-cyan/50 text-neon-cyan placeholder:text-neon-cyan/50 focus:border-neon-magenta focus:shadow-neon-magenta font-mono text-sm uppercase tracking-wider"
             />
-          </div>
+            {showResults && searchQuery && (
+              <div className="absolute top-full left-0 right-0 mt-1 bg-cyber-darker border border-neon-cyan/50 rounded-md overflow-hidden z-50 shadow-lg shadow-neon-cyan/20">
+                {filteredPages.length > 0 ? (
+                  filteredPages.map((page) => (
+                    <Link
+                      key={page.slug}
+                      href={page.slug}
+                      className="block px-4 py-2 text-sm text-gray-300 hover:bg-neon-cyan/20 hover:text-neon-cyan font-mono transition-colors border-b border-neon-cyan/10 last:border-b-0"
+                    >
+                      {page.name}
+                    </Link>
+                  ))
+                ) : (
+                  <div className="px-4 py-2 text-sm text-gray-500 font-mono">
+                    Nenhum resultado encontrado
+                  </div>
+                )}
+              </div>
+            )}
+          </form>
         </div>
       </header>
 
@@ -230,11 +279,16 @@ export default function HomePage() {
                     <span className="text-lg font-bold text-neon-cyan uppercase tracking-wider" style={{ textShadow: '0 0 10px #00ffff' }}>CHIDI NIKOLIC</span>
                   </div>
                   
-                  {/* Image Placeholder */}
+                  {/* Image */}
                   <div className="p-3 border-b border-neon-cyan/20">
-                    <div className="w-full h-48 bg-cyber-gray rounded flex items-center justify-center border border-neon-cyan/20">
-                      <span className="text-gray-600 text-xs font-mono uppercase">[IMAGEM INDISPONÍVEL]</span>
-                    </div>
+                    <Image
+                      src="/images/chidi-nikolic.png"
+                      alt="Chidi Nikolic quando jovem"
+                      width={280}
+                      height={320}
+                      className="w-full h-auto rounded object-cover grayscale hover:grayscale-0 transition-all duration-500"
+                    />
+                    <p className="text-xs text-gray-500 text-center mt-2 font-mono">Chidi Nikolic, circa 1995</p>
                   </div>
                   
                   {/* Info Table */}

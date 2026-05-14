@@ -1,164 +1,252 @@
-@import 'tailwindcss';
-@import 'tw-animate-css';
-@source "../node_modules/streamdown/dist/*.js";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-:root {
-  --background: rgb(255, 255, 255);
-  --foreground: rgb(10, 10, 10);
-  --card: rgb(255, 255, 255);
-  --card-foreground: rgb(10, 10, 10);
-  --popover: rgb(255, 255, 255);
-  --popover-foreground: rgb(10, 10, 10);
-  --primary: rgb(41, 41, 41);
-  --primary-foreground: rgb(250, 250, 250);
-  --secondary: rgb(250, 250, 250);
-  --secondary-foreground: rgb(90, 90, 90);
-  --muted: rgb(240, 240, 240);
-  --muted-foreground: rgb(113, 113, 113);
-  --accent: rgb(245, 245, 245);
-  --accent-foreground: oklch(57.61% 0.2508 258.23);
-  --destructive: rgb(231, 0, 11);
-  --destructive-foreground: rgb(245, 245, 245);
-  --border: rgb(229, 229, 229);
-  --input: rgb(229, 229, 229);
-  --ring: rgb(161, 161, 161);
-  --chart-1: rgb(115, 115, 115);
-  --chart-2: rgb(115, 115, 115);
-  --chart-3: rgb(115, 115, 115);
-  --chart-4: rgb(115, 115, 115);
-  --chart-5: rgb(115, 115, 115);
-  --sidebar: rgb(250, 250, 250);
-  --sidebar-foreground: rgb(10, 10, 10);
-  --sidebar-primary: rgb(23, 23, 23);
-  --sidebar-primary-foreground: rgb(250, 250, 250);
-  --sidebar-accent: rgb(245, 245, 245);
-  --sidebar-accent-foreground: rgb(23, 23, 23);
-  --sidebar-border: rgb(229, 229, 229);
-  --sidebar-ring: rgb(161, 161, 161);
-  --font-sans: Geist, sans-serif;
-  --font-serif: Geist Mono, monospace;
-  --font-mono: Geist Mono, monospace;
-  --radius: 0.75rem;
-  --shadow-2xs: 0px 1px 0px 0px hsl(0 0% 0% / 0);
-  --shadow-xs: 0px 1px 0px 0px hsl(0 0% 0% / 0);
-  --shadow-sm: rgba(0, 0, 0, 0) 0px 0px 0px 0px,
-    rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px,
-    rgba(0, 0, 0, 0.04) 0px 2px 2px 0px,
-    rgb(250, 250, 250) 0px 0px 0px 1px box-sizing;
-  --shadow: 0 0 0 1px rgba(0, 0, 0, 0.08), 0px 1px 1px rgba(0, 0, 0, 0.02),
-    0px 8px 16px -4px rgba(0, 0, 0, 0.04),
-    0px 24px 32px -8px rgba(0, 0, 0, 0.06);
-  --shadow-md: 0px 1px 0px 0px hsl(0 0% 0% / 0),
-    0px 2px 4px -1px hsl(0 0% 0% / 0);
-  --shadow-lg: 0px 1px 0px 0px hsl(0 0% 0% / 0),
-    0px 4px 6px -1px hsl(0 0% 0% / 0);
-  --shadow-xl: 0px 1px 0px 0px hsl(0 0% 0% / 0),
-    0px 8px 10px -1px hsl(0 0% 0% / 0);
-  --shadow-2xl: 0px 1px 0px 0px hsl(0 0% 0% / 0);
-  --tracking-normal: 0em;
-  --spacing: 0.25rem;
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
 }
 
-.dark {
-  --background: rgb(10, 10, 10);
-  --foreground: rgb(250, 250, 250);
-  --card: rgb(25, 25, 25);
-  --card-foreground: rgb(250, 250, 250);
-  --popover: rgb(38, 38, 38);
-  --popover-foreground: rgb(250, 250, 250);
-  --primary: rgb(115, 115, 115);
-  --primary-foreground: rgb(250, 250, 250);
-  --secondary: rgb(38, 38, 38);
-  --secondary-foreground: rgb(250, 250, 250);
-  --muted: rgb(38, 38, 38);
-  --muted-foreground: rgb(161, 161, 161);
-  --accent: rgb(64, 64, 64);
-  --accent-foreground: rgb(250, 250, 250);
-  --destructive: rgb(255, 100, 103);
-  --destructive-foreground: rgb(38, 38, 38);
-  --border: rgb(56, 56, 56);
-  --input: rgb(82, 82, 82);
-  --ring: rgb(115, 115, 115);
-  --chart-1: rgb(115, 115, 115);
-  --chart-2: rgb(115, 115, 115);
-  --chart-3: rgb(115, 115, 115);
-  --chart-4: rgb(115, 115, 115);
-  --chart-5: rgb(115, 115, 115);
-  --sidebar: rgb(23, 23, 23);
-  --sidebar-foreground: rgb(250, 250, 250);
-  --sidebar-primary: rgb(250, 250, 250);
-  --sidebar-primary-foreground: rgb(23, 23, 23);
-  --sidebar-accent: rgb(38, 38, 38);
-  --sidebar-accent-foreground: rgb(250, 250, 250);
-  --sidebar-border: rgb(255, 255, 255);
-  --sidebar-ring: rgb(82, 82, 82);
-  --font-sans: Geist, sans-serif;
-  --font-serif: Geist Mono, monospace;
-  --font-mono: Geist Mono, monospace;
-  --radius: 0.75rem;
-  --shadow-2xs: 0px 1px 0px 0px hsl(0 0% 0% / 0);
-  --shadow-xs: 0px 1px 0px 0px hsl(0 0% 0% / 0);
-  --shadow-sm: 0px 1px 0px 0px hsl(0 0% 0% / 0),
-    0px 1px 2px -1px hsl(0 0% 0% / 0);
-  --shadow: 0px 1px 0px 0px hsl(0 0% 0% / 0), 0px 1px 2px -1px hsl(0 0% 0% / 0);
-  --shadow-md: 0px 1px 0px 0px hsl(0 0% 0% / 0),
-    0px 2px 4px -1px hsl(0 0% 0% / 0);
-  --shadow-lg: 0px 1px 0px 0px hsl(0 0% 0% / 0),
-    0px 4px 6px -1px hsl(0 0% 0% / 0);
-  --shadow-xl: 0px 1px 0px 0px hsl(0 0% 0% / 0),
-    0px 8px 10px -1px hsl(0 0% 0% / 0);
-  --shadow-2xl: 0px 1px 0px 0px hsl(0 0% 0% / 0);
+@layer base {
+  :root {
+    --font-sans: var(--font-orbitron), var(--font-geist-sans);
+    --font-mono: var(--font-geist-mono);
+    --background: 240 10% 4%;
+    --foreground: 180 100% 90%;
+    --card: 240 10% 6%;
+    --card-foreground: 180 100% 90%;
+    --popover: 240 10% 6%;
+    --popover-foreground: 180 100% 90%;
+    --primary: 180 100% 50%;
+    --primary-foreground: 240 10% 4%;
+    --secondary: 320 100% 60%;
+    --secondary-foreground: 240 10% 4%;
+    --muted: 240 10% 15%;
+    --muted-foreground: 180 30% 60%;
+    --accent: 60 100% 50%;
+    --accent-foreground: 240 10% 4%;
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 180 50% 20%;
+    --input: 240 10% 15%;
+    --ring: 180 100% 50%;
+    --chart-1: 180 100% 50%;
+    --chart-2: 320 100% 60%;
+    --chart-3: 60 100% 50%;
+    --chart-4: 0 100% 50%;
+    --chart-5: 270 100% 60%;
+    --radius: 0.25rem;
+    --neon-cyan: 180 100% 50%;
+    --neon-magenta: 320 100% 60%;
+    --neon-yellow: 60 100% 50%;
+    --neon-red: 0 100% 50%;
+    --neon-purple: 270 100% 60%;
+    --sidebar-background: 240 10% 6%;
+    --sidebar-foreground: 180 100% 90%;
+    --sidebar-primary: 180 100% 50%;
+    --sidebar-primary-foreground: 240 10% 4%;
+    --sidebar-accent: 320 100% 60%;
+    --sidebar-accent-foreground: 240 10% 4%;
+    --sidebar-border: 180 50% 20%;
+    --sidebar-ring: 180 100% 50%;
+  }
+  .dark {
+    --background: 240 10% 4%;
+    --foreground: 180 100% 90%;
+    --card: 240 10% 6%;
+    --card-foreground: 180 100% 90%;
+    --popover: 240 10% 6%;
+    --popover-foreground: 180 100% 90%;
+    --primary: 180 100% 50%;
+    --primary-foreground: 240 10% 4%;
+    --secondary: 320 100% 60%;
+    --secondary-foreground: 240 10% 4%;
+    --muted: 240 10% 15%;
+    --muted-foreground: 180 30% 60%;
+    --accent: 60 100% 50%;
+    --accent-foreground: 240 10% 4%;
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 180 50% 20%;
+    --input: 240 10% 15%;
+    --ring: 180 100% 50%;
+    --chart-1: 180 100% 50%;
+    --chart-2: 320 100% 60%;
+    --chart-3: 60 100% 50%;
+    --chart-4: 0 100% 50%;
+    --chart-5: 270 100% 60%;
+    --sidebar-background: 240 10% 6%;
+    --sidebar-foreground: 180 100% 90%;
+    --sidebar-primary: 180 100% 50%;
+    --sidebar-primary-foreground: 240 10% 4%;
+    --sidebar-accent: 320 100% 60%;
+    --sidebar-accent-foreground: 240 10% 4%;
+    --sidebar-border: 180 50% 20%;
+    --sidebar-ring: 180 100% 50%;
+  }
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --color-card: var(--card);
-  --color-card-foreground: var(--card-foreground);
-  --color-popover: var(--popover);
-  --color-popover-foreground: var(--popover-foreground);
-  --color-primary: var(--primary);
-  --color-primary-foreground: var(--primary-foreground);
-  --color-secondary: var(--secondary);
-  --color-secondary-foreground: var(--secondary-foreground);
-  --color-muted: var(--muted);
-  --color-muted-foreground: var(--muted-foreground);
-  --color-accent: var(--accent);
-  --color-accent-foreground: var(--accent-foreground);
-  --color-destructive: var(--destructive);
-  --color-destructive-foreground: var(--destructive-foreground);
-  --color-border: var(--border);
-  --color-input: var(--input);
-  --color-ring: var(--ring);
-  --color-chart-1: var(--chart-1);
-  --color-chart-2: var(--chart-2);
-  --color-chart-3: var(--chart-3);
-  --color-chart-4: var(--chart-4);
-  --color-chart-5: var(--chart-5);
-  --color-sidebar: var(--sidebar);
-  --color-sidebar-foreground: var(--sidebar-foreground);
-  --color-sidebar-primary: var(--sidebar-primary);
-  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
-  --color-sidebar-accent: var(--sidebar-accent);
-  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
-  --color-sidebar-border: var(--sidebar-border);
-  --color-sidebar-ring: var(--sidebar-ring);
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-inter), system-ui, sans-serif;
+    line-height: 1.7;
+    letter-spacing: 0.01em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-orbitron), system-ui, sans-serif;
+    letter-spacing: 0.05em;
+  }
+  
+  p, li {
+    font-family: var(--font-inter), system-ui, sans-serif;
+    line-height: 1.8;
+    font-weight: 400;
+    color: #d1d5db;
+  }
+  
+  a {
+    font-family: var(--font-inter), system-ui, sans-serif;
+  }
+  
+  .prose {
+    font-family: var(--font-inter), system-ui, sans-serif;
+  }
+  
+  .prose p {
+    line-height: 1.85;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #d1d5db;
+    margin-bottom: 1.25rem;
+  }
+  
+  .prose strong {
+    color: #f3f4f6;
+    font-weight: 600;
+  }
+  
+  article p {
+    font-family: var(--font-inter), system-ui, sans-serif;
+    line-height: 1.85;
+    font-size: 1rem;
+    color: #d1d5db;
+  }
+}
 
-  --font-sans: var(--font-sans);
-  --font-mono: var(--font-mono);
-  --font-serif: var(--font-serif);
+/* Cyberpunk Glitch Effect */
+@keyframes glitch {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    transform: translate(2px, 2px);
+  }
+  80% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
 
-  --radius-sm: calc(var(--radius) - 6px);
-  --radius-md: calc(var(--radius) - 2px);
-  --radius-lg: var(--radius);
-  --radius-xl: calc(var(--radius) + 4px);
+@keyframes scanline {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100vh);
+  }
+}
 
-  --shadow-2xs: var(--shadow-2xs);
-  --shadow-xs: var(--shadow-xs);
-  --shadow-sm: var(--shadow-sm);
-  --shadow: var(--shadow);
-  --shadow-md: var(--shadow-md);
-  --shadow-lg: var(--shadow-lg);
-  --shadow-xl: var(--shadow-xl);
-  --shadow-2xl: var(--shadow-2xl);
+@keyframes flicker {
+  0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+    opacity: 1;
+  }
+  20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+    opacity: 0.4;
+  }
+}
+
+@keyframes neonPulse {
+  0%, 100% {
+    filter: brightness(1) drop-shadow(0 0 5px currentColor);
+  }
+  50% {
+    filter: brightness(1.2) drop-shadow(0 0 20px currentColor);
+  }
+}
+
+@keyframes textGlitch {
+  0% {
+    text-shadow: 0.05em 0 0 #00fffc, -0.05em -0.025em 0 #fc00ff, 0.025em 0.05em 0 #fffc00;
+  }
+  14% {
+    text-shadow: 0.05em 0 0 #00fffc, -0.05em -0.025em 0 #fc00ff, 0.025em 0.05em 0 #fffc00;
+  }
+  15% {
+    text-shadow: -0.05em -0.025em 0 #00fffc, 0.025em 0.025em 0 #fc00ff, -0.05em -0.05em 0 #fffc00;
+  }
+  49% {
+    text-shadow: -0.05em -0.025em 0 #00fffc, 0.025em 0.025em 0 #fc00ff, -0.05em -0.05em 0 #fffc00;
+  }
+  50% {
+    text-shadow: 0.025em 0.05em 0 #00fffc, 0.05em 0 0 #fc00ff, 0 -0.05em 0 #fffc00;
+  }
+  99% {
+    text-shadow: 0.025em 0.05em 0 #00fffc, 0.05em 0 0 #fc00ff, 0 -0.05em 0 #fffc00;
+  }
+  100% {
+    text-shadow: -0.025em 0 0 #00fffc, -0.025em -0.025em 0 #fc00ff, -0.025em -0.05em 0 #fffc00;
+  }
+}
+
+.glitch-text {
+  animation: textGlitch 1s infinite;
+}
+
+.neon-glow {
+  animation: neonPulse 2s ease-in-out infinite;
+}
+
+.scanline::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(to bottom, transparent, rgba(0, 255, 255, 0.1), transparent);
+  animation: scanline 8s linear infinite;
+  pointer-events: none;
+  z-index: 1000;
+}
+
+.cyber-border {
+  border: 1px solid;
+  border-image: linear-gradient(45deg, #00ffff, #ff00ff, #ffff00) 1;
+}
+
+.cyber-card {
+  background: linear-gradient(135deg, rgba(0, 255, 255, 0.05) 0%, rgba(255, 0, 255, 0.05) 100%);
+  border: 1px solid rgba(0, 255, 255, 0.3);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.1), inset 0 0 20px rgba(0, 255, 255, 0.05);
+}
+
+.cyber-card:hover {
+  border-color: rgba(255, 0, 255, 0.5);
+  box-shadow: 0 0 30px rgba(255, 0, 255, 0.2), inset 0 0 30px rgba(255, 0, 255, 0.05);
 }
